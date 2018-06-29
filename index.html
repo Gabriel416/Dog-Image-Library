@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gabe's dog breed library</title>
+</head>
+<style>
+    li {
+        margin: 30px 0px;
+    }
+
+    span {
+        color: #00b894;
+    }
+</style>
+
+<body>
+    <h1>Hello there!</h1>
+    <h3>Open up the console to try out these methods</h3>
+    <ul>
+        <li>returns a list of all dog breeds
+            <br>
+            <span>Dog.every()</span>
+        </li>
+        <li>returns a random dog image (number argument is optional and returns that amount of random dog images)
+            <br>
+            <span>Dog.random(number)</span>
+            <p>Ex: Dog.random(3)</p>
+        </li>
+        <li>returns an array of dog images of the dog breed passed in (breed argument is required. random argument is optional
+            and returns a single random image of the selected breed)
+            <br>
+            <span>Dog.breed(breed, random)</span>
+            <p>Ex: Dog.breed("hound", true)</p>
+        </li>
+        <li>returns an array of sub breeds of main breed passed in. (breed and subBreed argument are required. random argument
+            is optional and returns a single random image of the selected subBreed)
+            <br>
+            <span>Dog.subBreed(breed, subBreed, random)</span>
+            <p>Ex: Dog.subBreed("hound", "afghan", true)</p>
+        </li>
+        <li>returns an array of subBreeds for the passed in breed. (breed argument is required)
+            <br>
+            <span>Dog.subBreedList(breed)</span>
+            <p>Ex: Dog.subBreedList("hound")</p>
+        </li>
+    </ul>
+    <script src="./randomdog.js"></script>
+</body>
+
+</html>
